@@ -29,6 +29,13 @@ header {
     border-style: solid;
 }
 
+.links {
+	border-bottom: thin black;
+	border-bottom-style: solid;
+	min-width: 100%;
+	display: block;
+}
+
 .contentholder {
     margin: 5px 5px;
 }
