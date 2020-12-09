@@ -1,18 +1,20 @@
 body {
 	margin: 0;
 	padding: 0;
-	background-color: #58595B;
-	color: white;
+	background-color: white;
+	color: #58595B;
 	font-family: 'Montserrat', sans-serif;
 }
 
 header {
 	background: #FF8200;
+	color: white;
 	font-family: 'Solway', serif;
 	width: 100%;
 	font-size: 60px;
 	border-bottom-style: solid;
 	border-width: 2px;
+	border-color: #58595B;
 }
 
 .gridcontainer {
