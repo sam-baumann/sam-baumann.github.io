@@ -22,15 +22,16 @@ header {
     grid-template-columns: 20% 80%;
 }
 
-.sidelinks {
-    border: black;
+.linkcontainer {
+    border: #58595B;
     border-radius: 10px;
     margin: 5px 5px;
-    border-style: solid;
+	border-style: solid;
+	display: block;
 }
 
 .links {
-	border-bottom: thin black;
+	border-bottom: thin #58595B;
 	border-bottom-style: solid;
 	min-width: 100%;
 	display: block;
