@@ -1,1 +1,29 @@
-hello, world!
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Sam's Webpage</title>
+	<link rel="stylesheet" href="style.css" type = "text/css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Solway&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header>
+		Sam's Website
+	</header>
+	<div class="sections">
+		<div class="content" id="github" onclick="location.href='https://github.com/sam-baumann';">
+			<div class="image"></div>
+			<h1>My Github</h1>
+		</div>
+		<div id="pictures" class="content">
+			<div class="image"></div>
+			<h1>Pictures</h1>
+		</div>
+	</div>
+
+	<script>
+		var x = document.getElementsByClassName("sections")[0].getElementsByClassName("content").length;
+		document.getElementsByClassName("sections")[0].style.gridTemplate=("repeat("+x.toString()+", 1fr) / 1fr");
+	</script>
+</body>
+</html>
