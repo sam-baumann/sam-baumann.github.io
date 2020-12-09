@@ -4,11 +4,6 @@
             "image": "images/Flash01.jpeg",
             "heading": "Content Example",
             "text": "This is example text"
-        },
-        {
-            "image": "https://images-na.ssl-images-amazon.com/images/I/81jUlwpaGVL.jpg",
-            "heading": "The signal and the noise",
-            "text": "This is where the review will go"
         }
     ]
 }
