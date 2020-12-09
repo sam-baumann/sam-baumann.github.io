@@ -38,11 +38,24 @@ header {
 }
 
 .contentholder {
-    margin: 5px 5px;
+	margin: 5px 5px;
+}
+
+.content {
+	border: #58595B;
+	border-radius: 10px;
+	border-style: solid;
+}
+
+.content h1{
+	border-bottom: thin #58595B;
+	border-bottom-style: solid;
+	display: block;
+	min-width: 100%;
 }
 
 img {
-    max-width: 75%;
+    max-width: 30%;
     max-height: 100%;
-    margin: 0px auto;
+    margin: auto 5px;
 }
