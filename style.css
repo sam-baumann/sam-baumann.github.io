@@ -1,0 +1,38 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #58595B;
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+}
+
+header {
+	background: #FF8200;
+	font-family: 'Solway', serif;
+	width: 100%;
+	font-size: 60px;
+	border-bottom-style: solid;
+	border-width: 2px;
+}
+
+.gridcontainer {
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+
+.sidelinks {
+    border: black;
+    border-radius: 10px;
+    margin: 5px 5px;
+    border-style: solid;
+}
+
+.contentholder {
+    margin: 5px 5px;
+}
+
+img {
+    max-width: 75%;
+    max-height: 100%;
+    margin: 0px auto;
+}

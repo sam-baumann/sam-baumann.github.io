@@ -2,28 +2,32 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Sam's Webpage</title>
+	<title>Sam Baumann</title>
 	<link rel="stylesheet" href="style.css" type = "text/css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat|Solway&display=swap" rel="stylesheet">
 </head>
 <body>
 	<header>
-		Sam's Website
+		Sam Baumann
 	</header>
-	<div class="sections">
-		<div class="content" id="github" onclick="location.href='https://github.com/sam-baumann';">
-			<div class="image"></div>
-			<h1>My Github</h1>
-		</div>
-		<div id="pictures" class="content">
-			<div class="image"></div>
-			<h1>Pictures</h1>
-		</div>
-	</div>
 
-	<script>
-		var x = document.getElementsByClassName("sections")[0].getElementsByClassName("content").length;
-		document.getElementsByClassName("sections")[0].style.gridTemplate=("repeat("+x.toString()+", 1fr) / 1fr");
-	</script>
+    <div class="gridcontainer">
+        <div class="sidelinks">
+            <a href="sam-baumann.github.com"> My Github </a>
+
+            <br>
+
+            More to come soon!
+        </div>
+
+        <div class="contentholder">
+            <h1>More content coming here soon, until then enjoy a picture of Flash!</h1>
+
+            <br>
+
+            <img src="images/Flash01.jpeg" alt="Flash">
+        </div>
+    </div>
+
 </body>
 </html>
