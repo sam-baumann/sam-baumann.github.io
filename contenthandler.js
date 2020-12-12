@@ -31,7 +31,7 @@ for (i = data.content.length - 1; i >= j; i--){
     div.className = "content";
     internals.className = "internalcontent";
 
-    div.innerHTML = "<h1>" + data.content[i].heading + "</h1>";
+    div.innerHTML = "<h1>" + data.content[i].heading + "</h1> <span class = \"date\">" + data.content[i].date + "</span>";
     
     img.src = data.content[i].image;
     p.innerHTML = data.content[i].text;

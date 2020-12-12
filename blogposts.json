@@ -3,7 +3,8 @@
         {
             "image": "images/Flash01.jpeg",
             "heading": "First post",
-            "text": "(Date 12/10/2020) Hi! I'm Sam. This is the first post here. I expect a lot of the content here to be book reviews, along with updates about some personal projects."
+            "text": "Hi! I'm Sam. This is the first post here. I expect a lot of the content here to be book reviews, along with updates about some personal projects.",
+            "date": "12/10/2020"
         }
     ]
 }
