@@ -1,0 +1,8 @@
+---
+layout: post
+title: "Welcome"
+---
+Hello! I'm Sam, a computer science student at the University of Tennessee, from St. Louis, Missouri.
+
+This is my new website, where I will post about my personal projects, and probably some other stuff too.
+
