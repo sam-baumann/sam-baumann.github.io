@@ -6,3 +6,6 @@ Hello! I'm Sam, a computer science student at the University of Tennessee, from 
 
 This is my new website, where I will post about my personal projects, and probably some other stuff too.
 
+Here is my dog Flash
+
+![flash](/assets/Flash01.jpeg)
