@@ -1,4 +1,60 @@
 ---
 layout: default
 ---
-{{ content }}
+
+<style>
+    #leftside {
+        width: 70%;
+        float: left;
+        border-right: 1px solid gray;
+    }
+    #rightside {
+        width: 29%;
+        float: right;
+        font-size: 90%;
+    }
+
+    .page-content h2 {
+        border-bottom: 1px solid gray;
+    }
+
+    #leftside h3 {
+        font-weight: bold;
+    }
+
+    @media print {
+        .site-header, .site-footer {
+            visibility: collapse;
+        }
+
+        #rightside {
+            font-weight: bold;
+            font-size: 80%;
+        }
+
+        p, h3, h2{
+            margin-bottom: 2px;
+        }
+
+        h3 {
+            text-decoration: underline;
+        }
+    }
+</style>
+
+<div id="leftside">
+    {{ content }}
+</div>
+
+<div id="rightside">
+    <h2>My information</h2>
+    <p>Phone: {{ page.phone }}</p>
+    <p>Email: <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+    <p>Location: {{ page.location }}</p>
+    <p>Github: <a href="https://github.com/{{ site.github_username| cgi_escape | escape }}">{{ site.github_username }}</a></p>
+    <p>Linkedin: <a href="https://www.linkedin.com/in/{{ site.linkedin_username| cgi_escape | escape }}">{{ site.linkedin_username }}</a></p>
+    <p>Feel free to email me to request any information that isn't on here</p>
+
+    <h2>Awards and Honors</h2>
+    {{ page.awards }}
+</div>
