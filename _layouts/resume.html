@@ -48,12 +48,11 @@ layout: default
 
 <div id="rightside">
     <h2>My information</h2>
-    <p>Phone: {{ page.phone }}</p>
     <p>Email: <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
     <p>Location: {{ page.location }}</p>
     <p>Github: <a href="https://github.com/{{ site.github_username| cgi_escape | escape }}">{{ site.github_username }}</a></p>
     <p>Linkedin: <a href="https://www.linkedin.com/in/{{ site.linkedin_username| cgi_escape | escape }}">{{ site.linkedin_username }}</a></p>
-    <p>Feel free to email me to request any information that isn't on here</p>
+    <p>This is my public site so I don't want my personal info on here (phone number, address). Feel free to email me to request this information or anything else that isn't on here.</p>
 
     <h2>Awards and Honors</h2>
     {{ page.awards }}

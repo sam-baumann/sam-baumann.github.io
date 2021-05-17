@@ -1,15 +1,14 @@
 ---
 layout: resume
 title: "Resume"
-permalink: /resume
+permalink: /resume/
 #The following will be used in the sidebar on the resume page
-phone: "314-873-0007"
 location: "St. Charles, MO"
 #because of the way the layout is, this has to be raw html
 awards: "
 <ul>
-    <li>STEM Award (2018): Given by St. Charles County: Top student in STEM with county-wide recognition.</li>
     <li>Eagle Scout (2018)</li>
+    <li>STEM Award (2018): Given by St. Charles County: Top student in STEM with county-wide recognition.</li>
     <li>UTK Dean's List
         <ul>
             <li>Fall 2018</li>
@@ -52,7 +51,7 @@ Graduated May 2018 with 4.0 GPA
 
 ### Technology
 - Programming Languages: Python, C++, C, C#, Java, R, Javascript, CSS, Scheme.
-- Tools used: Git, Github, Django, Jekyll, Unity.
+- Tools used include: Git, Github, Django, Jekyll, Unity.
 
 ### Management
 - Successfully led an Eagle Scout service project, building gardening boxes for an elementary school. Created plans and budget, recruited, and led labor.
