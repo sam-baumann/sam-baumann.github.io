@@ -19,7 +19,6 @@ awards: "
     </li>
 </ul>
 "
-#published: false
 ---
 # Samuel Baumann
 ### Software Engineer

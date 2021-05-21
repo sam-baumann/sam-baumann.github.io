@@ -72,6 +72,8 @@ but optimization is another thing that needs to be focused on.
     If/when I do more work on this project, I will first focus on optimization.
     A few steps I might take to optimize are adding multiple threads, and also optimizing intersections,
     so the code doesn't waste time while there are no objects to render.
+    Python is also very slow for this type of application so if I were to continue,
+    I would probably start over in another language.
 
 [Find the project repo here][repo].
 If you want to do this for yourself, or learn more about the math involved,
