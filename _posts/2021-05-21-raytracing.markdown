@@ -1,5 +1,5 @@
 ---
-title: What I learned building a raytracer.
+title: What I Learned Building a Raytracer
 ---
 I built a raytracer from scratch in python
 
