@@ -7,16 +7,17 @@ location: "St. Charles, MO"
 #because of the way the layout is, this has to be raw html
 awards: "
 <ul>
-    <li>Eagle Scout (2018)</li>
-    <li>STEM Award (2018): Given by St. Charles County: Top student in STEM with county-wide recognition.</li>
     <li>UTK Dean's List
         <ul>
             <li>Fall 2018</li>
             <li>Fall 2019</li>
             <li>Spring 2020</li>
             <li>Fall 2020</li>
+            <li>Spring 2021</li>
         </ul>
     </li>
+    <li>Eagle Scout (2018)</li>
+    <li>STEM Award (2018): Given by St. Charles County: Top student in STEM with county-wide recognition.</li>
 </ul>
 "
 ---
@@ -29,7 +30,7 @@ College senior studying computer science with strong skills and experience in te
 
 ### Tickle College of Engineering, University of Tennessee Knoxville
 
-Undergraduate in Computer Science
+Candidate for Bachelor of Science in Computer Science
 
 Class of 2022, 3.79 GPA
 
@@ -41,16 +42,22 @@ Graduated May 2018 with 4.0 GPA
 
 ### Undergraduate Research Assistant | UTK | 2020-present
 
-- Researcher in the People, Agents, InteRactions, and Systems (PAIRS) Lab in the College of Engineering. Projects encompass human-computer interaction (HCI) and its relation to artificial intelligence (AI), machine learning, software engineering, work-life balance, and large-scale data analysis.
+- Working in the People, Agents, InteRactions, and Systems (PAIRS) Lab. Research projects are focused on intersection of artificial intelligence (AI) and human-computer interaction (HCI).
+- Using modern programming tools like Meteor and React Native to develop a browser extension and mobile app in the design of a study on prioritization of tasks across the domain of work and life.
+- Contributing to a literature review paper about the state of work-life balance literature. Contributions include reading papers, writing, and using R to create graphics.
 
-### ICS Attendant | UTK | 2020
+### Teaching Assistant | UTK | 2021 (August - Present)
+- Teaching assistant for systems programming class, assisting students with their coursework. Assignments are completed in C and the topics include buffering, threads, and memory allocation.
+- Some example assignments that students complete are creating their own version of the “make” Unix tool and creating a shell with features like pipes and output redirection.
+
+### ICS Attendant | UTK | 2020 (March - November)
 - Maintained equipment including 3d printers and woodworking tools at school "maker space". Ensured compliance to safety procedures, taught students interaction between CAD and 3D printing software.
 
 ## Skills
 
 ### Technology
 - Programming Languages: Python, C++, C, C#, Java, R, Javascript, CSS, Scheme.
-- Tools used include: Git, Github, Django, Jekyll, Unity.
+- Tools used include: Git, NPM, Yarn, Github, Django, Jekyll, Unity.
 
 ### Management
 - Successfully led an Eagle Scout service project, building gardening boxes for an elementary school. Created plans and budget, recruited, and led labor.
@@ -58,4 +65,4 @@ Graduated May 2018 with 4.0 GPA
 
 ### Leadership
 - Project manager overseeing all aspects of robotics team, competed in the First Tech Challenge and STL Battlebots competitions, team created different robot for each competition.
-- Vice president of the Makers Club at UTK, 2020-2021 school year.
+- Vice president of the Makers Club at UTK, 2020-2021 and 2021-2022 school year.
