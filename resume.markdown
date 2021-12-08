@@ -57,7 +57,7 @@ Graduated May 2018 with 4.0 GPA
 
 ### Technology
 - Programming Languages: Python, C++, C, C#, Java, R, Javascript, CSS, Lisp.
-- Technologies used include: Git, NPM, Yarn, Github, Django, Jekyll, Unity, Intel SIMD Extensions, Keras, Tensorflow, Scikit-Learn.
+- Technologies used include: Git, NPM, Yarn, Github, Django, Jekyll, Unity, Intel SIMD Extensions, Keras, Tensorflow, Scikit-Learn, Meteor, React Native, React.
 
 ### Management
 - Successfully led an Eagle Scout service project, building gardening boxes for an elementary school. Created plans and budget, recruited, and led labor.
