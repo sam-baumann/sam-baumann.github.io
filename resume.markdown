@@ -32,7 +32,7 @@ College senior studying computer science with strong skills and experience in te
 
 Candidate for Bachelor of Science in Computer Science
 
-Class of 2022, 3.79 GPA
+Class of 2022, 3.81 GPA
 
 ### St. Charles West High School
 
