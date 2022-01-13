@@ -46,7 +46,7 @@ Graduated May 2018 with 4.0 GPA
 - Using modern programming tools like Meteor and React Native to develop a browser extension and mobile app in the design of a study on prioritization of tasks across the domain of work and life.
 - Contributing to a literature review paper about the state of work-life balance literature. Contributions include reading papers, writing, and using R to create graphics.
 
-### Teaching Assistant | UTK | 2021 (August - December)
+### Teaching Assistant | UTK | 2021 (August - Present)
 - Teaching assistant for systems programming class, assisting students with their coursework. Assignments are completed in C and the topics include buffering, threads, and memory allocation.
 - Some example assignments that students complete are creating their own version of the “make” Unix tool and creating a shell with features like pipes and output redirection.
 
