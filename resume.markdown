@@ -40,17 +40,17 @@ Graduated May 2018 with 4.0 GPA
 
 ## Experience
 
-### Undergraduate Research Assistant | UTK | 2020-present
+### Undergraduate Research Assistant | UTK | November 2020 - present
 
 - Working in the People, Agents, InteRactions, and Systems (PAIRS) Lab. Research projects are focused on intersection of artificial intelligence (AI) and human-computer interaction (HCI).
 - Using modern programming tools like Meteor and React Native to develop a browser extension and mobile app in the design of a study on prioritization of tasks across the domain of work and life.
 - Contributing to a literature review paper about the state of work-life balance literature. Contributions include reading papers, writing, and using R to create graphics.
 
-### Teaching Assistant | UTK | 2021 (August - Present)
+### Teaching Assistant | UTK | August 2021 - Present
 - Teaching assistant for systems programming class, assisting students with their coursework. Assignments are completed in C and the topics include buffering, threads, and memory allocation.
 - Some example assignments that students complete are creating their own version of the “make” Unix tool and creating a shell with features like pipes and output redirection.
 
-### ICS Attendant | UTK | 2020 (March - November)
+### ICS Attendant | UTK | March - November 2020
 - Maintained equipment including 3d printers and woodworking tools at school "maker space". Ensured compliance to safety procedures, taught students interaction between CAD and 3D printing software.
 
 ## Skills
