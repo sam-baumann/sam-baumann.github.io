@@ -14,6 +14,7 @@ awards: "
             <li>Spring 2020</li>
             <li>Fall 2020</li>
             <li>Spring 2021</li>
+            <li>Fall 2021</li>
         </ul>
     </li>
     <li>Eagle Scout (2018)</li>
