@@ -53,6 +53,9 @@ Graduated May 2018 with 4.0 GPA
 ### ICS Attendant | UTK | March - November 2020
 - Maintained equipment including 3d printers and woodworking tools at school "maker space". Ensured compliance to safety procedures, taught students interaction between CAD and 3D printing software.
 
+### Mentee | AWS Community Mentorship Program | January - May 2022
+- Monthly meetings and online learning sessions with mentor
+
 ## Skills
 
 ### Technology
