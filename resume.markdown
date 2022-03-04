@@ -14,6 +14,7 @@ awards: "
             <li>Spring 2020</li>
             <li>Fall 2020</li>
             <li>Spring 2021</li>
+            <li>Fall 2021</li>
         </ul>
     </li>
     <li>Eagle Scout (2018)</li>
@@ -32,7 +33,7 @@ College senior studying computer science with strong skills and experience in te
 
 Candidate for Bachelor of Science in Computer Science
 
-Class of 2022, 3.79 GPA
+Class of 2022, 3.81 GPA
 
 ### St. Charles West High School
 
@@ -40,24 +41,27 @@ Graduated May 2018 with 4.0 GPA
 
 ## Experience
 
-### Undergraduate Research Assistant | UTK | 2020-present
+### Undergraduate Research Assistant | UTK | November 2020 - present
 
 - Working in the People, Agents, InteRactions, and Systems (PAIRS) Lab. Research projects are focused on intersection of artificial intelligence (AI) and human-computer interaction (HCI).
 - Using modern programming tools like Meteor and React Native to develop a browser extension and mobile app in the design of a study on prioritization of tasks across the domain of work and life.
 - Contributing to a literature review paper about the state of work-life balance literature. Contributions include reading papers, writing, and using R to create graphics.
 
-### Teaching Assistant | UTK | 2021 (August - December)
+### Teaching Assistant | UTK | August 2021 - Present
 - Teaching assistant for systems programming class, assisting students with their coursework. Assignments are completed in C and the topics include buffering, threads, and memory allocation.
 - Some example assignments that students complete are creating their own version of the “make” Unix tool and creating a shell with features like pipes and output redirection.
 
-### ICS Attendant | UTK | 2020 (March - November)
+### ICS Attendant | UTK | March - November 2020
 - Maintained equipment including 3d printers and woodworking tools at school "maker space". Ensured compliance to safety procedures, taught students interaction between CAD and 3D printing software.
+
+### Mentee | AWS Community Mentorship Program | January - May 2022
+- Monthly meetings and online learning sessions with mentor from AWS.
 
 ## Skills
 
 ### Technology
 - Programming Languages: Python, C++, C, C#, Java, R, Javascript, CSS, Lisp.
-- Technologies used include: Git, NPM, Yarn, Github, Django, Jekyll, Unity, Intel SIMD Extensions, Keras, Tensorflow, Scikit-Learn, Meteor, React Native, React.
+- Technologies used include: Git, NPM, Yarn, Github, Django, Jekyll, Unity, Intel SIMD Extensions, Keras, Tensorflow, Scikit-Learn, Meteor, React Native, React, Docker.
 
 ### Management
 - Successfully led an Eagle Scout service project, building gardening boxes for an elementary school. Created plans and budget, recruited, and led labor.
