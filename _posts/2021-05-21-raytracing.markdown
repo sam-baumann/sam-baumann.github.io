@@ -1,5 +1,6 @@
 ---
 title: What I Learned Building a Raytracer
+published: false
 ---
 I built a raytracer from scratch in python
 
