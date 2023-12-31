@@ -21,6 +21,7 @@ awards: "
     <li>STEM Award (2018): Given by St. Charles County: Top student in STEM with county-wide recognition.</li>
 </ul>
 "
+published: false
 ---
 # Samuel Baumann
 ### Software Engineer

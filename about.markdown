@@ -2,6 +2,7 @@
 layout: page
 title: About
 permalink: /about/
+published: false
 ---
 I'm Sam, a senior in computer science at the University of Tennessee Knoxville.
 
