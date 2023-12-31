@@ -4,4 +4,4 @@
 
 layout: home
 ---
-Under Construction!
+This site is under Construction!
