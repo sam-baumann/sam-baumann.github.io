@@ -4,4 +4,5 @@
 
 layout: home
 ---
-Welcome to my site. For more about me, click the "about" link at the top of the page.
+
+Under Construction!

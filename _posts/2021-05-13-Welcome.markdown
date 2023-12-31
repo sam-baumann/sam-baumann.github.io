@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Welcome"
+published: false
 ---
 Hello! I'm Sam, a computer science student at the University of Tennessee, from St. Louis, Missouri.
 
