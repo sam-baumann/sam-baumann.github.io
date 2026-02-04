@@ -17,7 +17,9 @@ import Footer from "../components/Footer.astro";
 		flex-col dark:bg-gray-900 dark:text-gray-100"
 	>
 		<Header />
-		<slot />
+		<main class="flex-1">
+			<slot />
+		</main>
 		<Footer />
 	</body>
 </html>
