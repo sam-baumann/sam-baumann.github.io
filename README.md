@@ -1,46 +1,54 @@
-# Astro Starter Kit: Basics
+# Sam Baumann’s Personal Site
 
-```sh
-pnpm create astro@latest -- --template basics
+This repository is a **fully static** website built with [Astro](https://astro.build) and Tailwind CSS.
+
+## Project Structure
+
+```
+src/
+├── blog/           # Markdown blog posts
+│   └── post1.md
+├── pages/          # Astro pages
+│   ├── index.astro
+│   ├── blog/
+│   │   └── [slug].astro
+├── components/     # Reusable UI pieces
+│   ├── Header.astro
+│   └── Footer.astro
+├── layouts/        # Site‑wide layout
+│   └── BaseLayout.astro
+└── styles/         # Global CSS / Tailwind config
+    └── global.css
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Features
 
-## 🚀 Project Structure
+* **Blog** – Markdown posts in `src/blog/`. Each file becomes a static page under `/blog/<slug>`. The list page automatically pulls all posts.
+* **Portfolio** – Markdown entries in `src/portfolio/`. Each is served under `/portfolio/<slug>`.
+* **Now** – A simple `/now` page to share what you’re working on.
+* **Footer** – Locked to the bottom using Tailwind Flexbox utilities.
+* **No external dependencies** beyond Astro, Tailwind and the Vite plugin already present in `package.json`.
 
-Inside of your Astro project, you'll see the following folders and files:
+## Getting Started
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
+```bash
+pnpm install   # or npm ci
+pnpm dev       # start the dev server
+pnpm build     # build for production
+pnpm preview   # preview the built site
 ```
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+Add or edit Markdown files in `src/blog/` or `src/portfolio/` and they’ll appear automatically.
 
-## 🧞 Commands
+## Todos
 
-All commands are run from the root of the project, from a terminal:
+* **Fix blog routing** – The current `[slug].astro` file uses `import.meta.glob` to load markdown. Verify that each slug matches the filename (e.g., `post1.md` → `/blog/post1`).
+* **Generate a blog index page** – Create `src/pages/blog/index.astro` that lists all posts with titles and dates.
+* **Add pagination** – When the number of posts grows, implement a paginated list (optional).
+* **Create an RSS feed** – Export posts as RSS for syndication.
+* **Improve SEO** – Add Open Graph tags and proper meta descriptions.
+* **Add unit tests** – Test the markdown loader and page generation logic.
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `pnpm install`             | Installs dependencies                            |
-| `pnpm dev`             | Starts local dev server at `localhost:4321`      |
-| `pnpm build`           | Build your production site to `./dist/`          |
-| `pnpm preview`         | Preview your build locally, before deploying     |
-| `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `pnpm astro -- --help` | Get help using the Astro CLI                     |
+---
 
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Happy coding!

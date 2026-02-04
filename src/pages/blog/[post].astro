@@ -1,0 +1,16 @@
+---
+import { render } from 'astro:content';
+
+export function getStaticPaths() {
+  return [
+    { params: { post: 'first-post' } },
+    { params: { post: 'second-post' } },
+  ];
+}
+
+const { post } = Astro.params;
+const Content = await render(post);
+---
+<article class="prose lg:prose-xl mx-auto my-8 px-4">
+  <Content />
+</article>
