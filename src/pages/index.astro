@@ -1,6 +1,11 @@
 ---
+import { getCollection } from "astro:content";
 import "../styles/global.css";
 
+//get latest 10 blog posts
+const posts = (await getCollection('blog')).sort(
+  (a, b) => Date.parse(b.data.date.valueOf()) - Date.parse(a.data.date.valueOf()),
+).slice(0, 10);
 ---
 
 <!doctype html>
@@ -12,8 +17,27 @@ import "../styles/global.css";
         <link rel="icon" href="/favicon.ico" />
         <title>Sam Baumann</title>
     </head>
-    <body 
-        class="bg-shadow-grey-900 text-parchment-100">
-        <h1>Sam Baumann</h1>
+    <body class="bg-neutral-900 flex justify-center items-center min-h-screen">
+        <div class="flex flex-row bg-neutral-400 w-[70vw] rounded-2xl">
+            <div class="flex flex-col p-3 flex-1">
+                <h1 class="text-5xl p-2">Sam Baumann</h1>
+                <div class="rounded-xl bg-neutral-800 text-neutral-200 p-2 text-xl">
+                    <ul class="list-disc">
+                        <li><a href="https://github.com/sam-baumann">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="p-3 flex-1 text-xl">
+                Recent Posts
+                <ul class="list-disc">
+                {posts.map((post) => (
+                    <li>
+                        <a href={`/blog/${post.id}`}>{post.data.title}</a>
+                        {post.data.description && <span> - {post.data.description}</span>}
+                    </li>
+                ))}
+                </ul>
+            </div>
+        </div>
     </body>
 </html>
