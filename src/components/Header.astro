@@ -1,6 +1,21 @@
 ---
-//basic header component
+// Header.astro
+const navItems = [
+  { label: "Blog", href: "/blog" },
+  { label: "About", href: "/about" },
+  { label: "Now", href: "/now"}
+];
 ---
-<header class="bg-gray-800 text-white p-4">
-    <h1 class="text-2xl font-bold">Sam Baumann</h1>
+
+<header class="bg-neutral-800 text-white flex flex-row items-end">
+  <h1 class="text-2xl p-4 font-bold"><a href="/">Sam Baumann</a></h1>
+
+  {navItems.map(item => (
+    <a
+      class="p-4 hover:bg-neutral-200 hover:text-neutral-700 text-xl"
+      href={item.href}
+    >
+      {item.label}
+    </a>
+  ))}
 </header>
