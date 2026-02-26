@@ -17,7 +17,11 @@ import "../styles/global.css";
 		flex-col">
 		<Header />
 		<main class="flex-1 flex">
-			<slot />
+			<div
+				class="bg-neutral-900 flex flex-col justify-center items-center w-full"
+			>
+				<slot />
+			</div>
 		</main>
 		<Footer />
 	</body>

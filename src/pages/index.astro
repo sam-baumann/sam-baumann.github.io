@@ -1,6 +1,5 @@
 ---
 import { getCollection } from "astro:content";
-import "../styles/global.css";
 import BaseLayout from "../layouts/BaseLayout.astro";
 
 //get latest 10 blog posts
@@ -14,49 +13,45 @@ const posts = (await getCollection("blog"))
 ---
 
 <BaseLayout>
-    <div
-        class="bg-neutral-900 flex flex-col justify-center items-center w-full"
-    >
-        <div class="flex flex-row bg-neutral-400 w-[95vw] rounded-2xl">
-            <div class="flex flex-col p-3 flex-1">
-                <h1 class="text-5xl p-2 font-bold">Sam Baumann</h1>
-                <div
-                    class="rounded-xl bg-neutral-800 text-neutral-200 p-2 text-xl"
-                >
-                    <ul class="list-disc">
-                        <li><a href="/blog"> Blog </a></li>
-                        <li><a href="/now"> Now </a></li>
-                        <li><a href="/about"> About </a></li>
-                        <li>
-                            <a href="https://github.com/sam-baumann">
-                                GitHub
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://linkedin.com/sam-baumann">
-                                Linkedin
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="p-3 flex-1 text-xl">
-                <span class="text-2xl font-bold">Recent Posts</span>
+    <div class="flex flex-row bg-neutral-400 w-[95vw] rounded-2xl">
+        <div class="flex flex-col p-3 flex-1">
+            <h1 class="text-5xl p-2 font-bold">Sam Baumann</h1>
+            <div
+                class="rounded-xl bg-neutral-800 text-neutral-200 p-2 text-xl"
+            >
                 <ul class="list-disc">
-                    {
-                        posts.map((post) => (
-                            <li>
-                                <a href={`/blog/${post.id}`}>
-                                    {post.data.title}
-                                </a>
-                                {post.data.description && (
-                                    <span> - {post.data.description}</span>
-                                )}
-                            </li>
-                        ))
-                    }
+                    <li><a href="/blog"> Blog </a></li>
+                    <li><a href="/now"> Now </a></li>
+                    <li><a href="/about"> About </a></li>
+                    <li>
+                        <a href="https://github.com/sam-baumann">
+                            GitHub
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://linkedin.com/sam-baumann">
+                            Linkedin
+                        </a>
+                    </li>
                 </ul>
             </div>
+        </div>
+        <div class="p-3 flex-1 text-xl">
+            <span class="text-2xl font-bold">Recent Posts</span>
+            <ul class="list-disc">
+                {
+                    posts.map((post) => (
+                        <li>
+                            <a href={`/blog/${post.id}`}>
+                                {post.data.title}
+                            </a>
+                            {post.data.description && (
+                                <span> - {post.data.description}</span>
+                            )}
+                        </li>
+                    ))
+                }
+            </ul>
         </div>
     </div>
 </BaseLayout>

@@ -16,15 +16,4 @@ pnpm preview   # preview the built site
 - /now: what am I working on now? What music am I listening to? What's the last movie I watched? 
 
 ## Design:
-Dark mode color palette: https://coolors.co/252323-70798c-f5f1ed-dad2bc-a99985
 Currently only dark mode - light mode will be on the roadmap
-
-## Notes:
-
-re-entry note: sometime this week (2/8)
-Goal: layout landing page to roughly match penpopt design
-
-First step:
-- wrap main content in a container
-- lay that container out with desired spacing on the screen
-- get fonts working as desired

@@ -15,9 +15,15 @@ const { Content } = await render(post);
 ---
 
 <BaseLayout>
-  <h1>{post.data.title}</h1>
+  <div class="min-h-full pt-5">
 
-  <div>
-  <Content />
+    <h1 class="text-5xl font-bold text-neutral-50">{post.data.title}</h1>
+
+    <br/>
+
+    <article class="prose prose-neutral prose-invert lg:prose-xl">
+      <Content/>
+    </article>
+
   </div>
 </BaseLayout>
