@@ -1,10 +1,10 @@
 ---
-import { getCollection, render } from 'astro:content';
-import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection, render } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
 // 1. Generate a new path for every collection entry
 export async function getStaticPaths() {
-  const posts = await getCollection('blog');
-  return posts.map(post => ({
+  const posts = await getCollection("blog");
+  return posts.map((post) => ({
     params: { post: post.id },
     props: { post },
   }));
@@ -16,14 +16,28 @@ const { Content } = await render(post);
 
 <BaseLayout>
   <div class="min-h-full pt-5">
-
     <h1 class="text-5xl font-bold text-neutral-50">{post.data.title}</h1>
 
-    <br/>
+    <br />
+
+    {
+      post.data.tags && post.data.tags.length > 0 ? (
+        <div>
+          Tags:
+          {post.data.tags.map((tag) => {
+            return (<span>
+              <a href={`/blog/tags/${tag}`}>#{tag}</a>
+            </span>);
+          })}
+        </div>
+        <br/>
+      ) : (
+        <div />
+      )
+    }
 
     <article class="prose prose-neutral prose-invert lg:prose-xl">
-      <Content/>
+      <Content />
     </article>
-
   </div>
 </BaseLayout>
