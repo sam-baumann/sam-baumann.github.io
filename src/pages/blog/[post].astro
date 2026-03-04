@@ -16,7 +16,7 @@ const { Content } = await render(post);
 
 <BaseLayout>
   <div class="min-h-full pt-5">
-    <h1 class="text-5xl font-bold text-neutral-50">{post.data.title}</h1>
+    <h1 class="text-5xl font-bold">{post.data.title}</h1>
 
     <br />
 
@@ -36,7 +36,7 @@ const { Content } = await render(post);
       )
     }
 
-    <article class="prose prose-neutral prose-invert lg:prose-xl">
+    <article class="prose prose-stone prose-invert lg:prose-xl">
       <Content />
     </article>
   </div>
