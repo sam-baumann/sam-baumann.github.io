@@ -1,2 +1,37 @@
 @import "tailwindcss";
-@plugin "@tailwindcss/typography"
+@plugin "@tailwindcss/typography";
+
+@utility prose-mist {
+  --tw-prose-body: var(--color-mist-800);
+  --tw-prose-headings: var(--color-mist-900);
+  --tw-prose-lead: var(--color-mist-700);
+  --tw-prose-links: var(--color-mist-900);
+  --tw-prose-bold: var(--color-mist-900);
+  --tw-prose-counters: var(--color-mist-600);
+  --tw-prose-bullets: var(--color-mist-400);
+  --tw-prose-hr: var(--color-mist-300);
+  --tw-prose-quotes: var(--color-mist-900);
+  --tw-prose-quote-borders: var(--color-mist-300);
+  --tw-prose-captions: var(--color-mist-700);
+  --tw-prose-code: var(--color-mist-900);
+  --tw-prose-pre-code: var(--color-mist-100);
+  --tw-prose-pre-bg: var(--color-mist-900);
+  --tw-prose-th-borders: var(--color-mist-300);
+  --tw-prose-td-borders: var(--color-mist-200);
+  --tw-prose-invert-body: var(--color-mist-200);
+  --tw-prose-invert-headings: var(--color-white);
+  --tw-prose-invert-lead: var(--color-mist-300);
+  --tw-prose-invert-links: var(--color-white);
+  --tw-prose-invert-bold: var(--color-white);
+  --tw-prose-invert-counters: var(--color-mist-400);
+  --tw-prose-invert-bullets: var(--color-mist-600);
+  --tw-prose-invert-hr: var(--color-mist-700);
+  --tw-prose-invert-quotes: var(--color-mist-100);
+  --tw-prose-invert-quote-borders: var(--color-mist-700);
+  --tw-prose-invert-captions: var(--color-mist-400);
+  --tw-prose-invert-code: var(--color-white);
+  --tw-prose-invert-pre-code: var(--color-mist-300);
+  --tw-prose-invert-pre-bg: rgb(0 0 0 / 50%);
+  --tw-prose-invert-th-borders: var(--color-mist-600);
+  --tw-prose-invert-td-borders: var(--color-mist-700);
+}

@@ -1,21 +1,10 @@
 ---
 // Header.astro
-const navItems = [
-  { label: "Blog", href: "/blog" },
-  { label: "About", href: "/about" },
-  { label: "Now", href: "/now"}
-];
 ---
 
-<header class="bg-taupe-800 flex flex-row items-end">
-  <h1 class="text-2xl p-4 font-bold"><a href="/">Sam Baumann</a></h1>
-
-  {navItems.map(item => (
-    <a
-      class="p-4 hover:bg-taupe-200 hover:text-orange-700 text-xl"
-      href={item.href}
-    >
-      {item.label}
-    </a>
-  ))}
+<header class="flex flex-row items-end">
+  <div class="p-4">
+    <h1 class="text-2xl font-medium"><a href="/">Sam Baumann</a></h1>
+    <h2 class="font-light">Software Engineer</h2>
+  </div>
 </header>

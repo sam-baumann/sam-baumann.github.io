@@ -13,45 +13,29 @@ const posts = (await getCollection("blog"))
 ---
 
 <BaseLayout>
-    <div class="flex flex-row bg-taupe-400 w-[95vw] rounded-2xl">
-        <div class="flex flex-col p-3 flex-1">
-            <h1 class="text-5xl p-2 font-bold">Sam Baumann</h1>
-            <div
-                class="rounded-xl bg-taupe-800 text-orange-200 p-2 text-xl"
+    <div class="text-lg md:text-xl">
+        <p class="font-semibold">About</p>
+        <p>
+            Innovations team at <a href="https://americanaccessoriesintl.com/"
+                >AAI</a
             >
-                <ul class="list-disc">
-                    <li><a href="/blog"> Blog </a></li>
-                    <li><a href="/now"> Now </a></li>
-                    <li><a href="/about"> About </a></li>
-                    <li>
-                        <a href="https://github.com/sam-baumann">
-                            GitHub
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://linkedin.com/sam-baumann">
-                            Linkedin
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="p-3 flex-1 text-xl">
-            <span class="text-2xl font-bold">Recent Posts</span>
-            <ul class="list-disc">
-                {
-                    posts.map((post) => (
-                        <li>
-                            <a href={`/blog/${post.id}`}>
+        </p>
+        <p class="font-bold">Writing</p>
+        <div class="not-prose">
+            {
+                posts.map((post) => {
+                    return (
+                        <a href={`/blog/${post.id}`}>
+                            <div class="font-semibold hover:bg-mist-400 dark:hover:bg-mist-700 rounded-sm -mx-3 px-3">
                                 {post.data.title}
-                            </a>
-                            {post.data.description && (
-                                <span> - {post.data.description}</span>
-                            )}
-                        </li>
-                    ))
-                }
-            </ul>
+                            </div>
+                        </a>
+                    );
+                })
+            }
         </div>
+        <a href="/blog">See All</a>
+        <p>More</p>
+        <p>You can email me: <a href="mailto:sam.k.baumann@gmail.com">sam.k.baumann@gmail.com</a></p>
     </div>
 </BaseLayout>
