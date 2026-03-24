@@ -13,29 +13,67 @@ const posts = (await getCollection("blog"))
 ---
 
 <BaseLayout>
-    <div class="text-lg md:text-xl">
-        <p class="font-semibold">About</p>
-        <p>
-            Innovations team at <a href="https://americanaccessoriesintl.com/"
-                >AAI</a
-            >
-        </p>
-        <p class="font-bold">Writing</p>
-        <div class="not-prose">
-            {
-                posts.map((post) => {
-                    return (
-                        <a href={`/blog/${post.id}`}>
-                            <div class="font-semibold hover:bg-mist-400 dark:hover:bg-mist-700 rounded-sm -mx-3 px-3">
-                                {post.data.title}
-                            </div>
-                        </a>
-                    );
-                })
-            }
+    <div class="text-lg md:text-xl space-y-6">
+        <div>
+            <p class="font-semibold">About</p>
+            <div class="space-y-3">
+                <p>
+                    Hi! I'm Sam, a software engineer from Knoxville, Tennessee.
+                </p>
+
+                <p>
+                    On the innovations team at <a
+                        class="underline"
+                        href="https://americanaccessoriesintl.com/"
+                    >
+                        AAI
+                    </a>, building things across computer vision, edge AI, and
+                    wherever the next interesting problem shows up.
+                </p>
+
+                <p>
+                    In my free time, I'm usually tinkering with something,
+                    following St. Louis and Tennessee sports, or playing chess
+                    (feel free to <a
+                        class="underline"
+                        href="https://lichess.org/@/sam-k-b"
+                    >
+                        challenge me
+                    </a> on Lichess - fair warning, I'm not very good!)
+                </p>
+
+                <p>
+                    If you'd like to get in touch, I'd love to hear from you
+                    over email: <a
+                        href="mailto:sam.k.baumann@gmail.com"
+                        class="underline"
+                    >
+                        sam.k.baumann@gmail.com
+                    </a>
+                </p>
+            </div>
         </div>
-        <a href="/blog">See All</a>
-        <p>More</p>
-        <p>You can email me: <a href="mailto:sam.k.baumann@gmail.com">sam.k.baumann@gmail.com</a></p>
+        <div class="space-y-1">
+            <p class="font-bold">Writing</p>
+            <ul class="">
+                {
+                    // TODO abstract this into a component and use it on the blog page too
+                }
+                {
+                    posts.map((post) => {
+                        return (
+                            <li>
+                                <a href={`/blog/${post.id}`}>
+                                    <div class="font-semibold hover:bg-mist-400 dark:hover:bg-mist-700 rounded-sm -mx-3 px-3">
+                                        {post.data.title}
+                                    </div>
+                                </a>
+                            </li>
+                        );
+                    })
+                }
+            </ul>
+            <a href="/blog">See All</a>
+        </div>
     </div>
 </BaseLayout>

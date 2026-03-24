@@ -1,10 +1,10 @@
 ---
-title: "first post"
+title: "First Post (test)"
 date: "Feb 4 2026"
 description: "Post 1"
 tags: ["programming"]
 ---
-This is the first post with some example text
+This is the first post with some example text - just to prove the formatting. It will be replaced once I populate the actual first post
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec varius, nunc a tempus laoreet, purus leo posuere justo, in posuere felis tortor sed libero. Nam sodales eros vel mattis aliquet. Nulla malesuada eros sit amet fringilla faucibus. Vivamus ut leo sed mauris convallis elementum et in nibh. Aenean bibendum felis sed leo convallis, eu imperdiet ante pharetra. In eleifend interdum orci eget ultricies. Cras suscipit suscipit felis tristique tincidunt. Nam sagittis mauris ac est vulputate, eu ultrices tortor rutrum. Vestibulum ac elit ac diam consequat semper. Proin velit massa, ornare eget aliquet vel, posuere at libero. Donec eget dolor tempus, vulputate erat a, aliquet lacus. Phasellus ut porta nisl. In ullamcorper consequat ultrices. Maecenas efficitur malesuada eros, ac facilisis urna consectetur mattis. Maecenas ipsum nibh, finibus at nulla nec, tempus varius purus.
 
