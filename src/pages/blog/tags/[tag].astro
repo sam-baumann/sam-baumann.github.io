@@ -1,0 +1,11 @@
+---
+import { getCollection } from "astro:content";
+//TODO get actual tags, for now leaving this in to prevent build error
+export async function getStaticPaths() {
+  const posts = await getCollection("blog");
+  return posts.map((post) => ({
+    params: { tag: post.id },
+    props: { post },
+  }));
+}
+---
