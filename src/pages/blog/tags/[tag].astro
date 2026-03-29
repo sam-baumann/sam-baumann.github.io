@@ -1,11 +1,39 @@
 ---
 import { getCollection } from "astro:content";
+import type { CollectionEntry } from "astro:content";
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import PostList from "../../../components/PostList.astro";
 //TODO get actual tags, for now leaving this in to prevent build error
+type Post = CollectionEntry<"blog">;
+interface Props {
+    posts: Post[];
+    tag: String;
+}
+
+
 export async function getStaticPaths() {
   const posts = await getCollection("blog");
-  return posts.map((post) => ({
-    params: { tag: post.id },
-    props: { post },
+
+  const tagMap = new Map<string, typeof posts>();
+
+  posts.forEach((post) => {
+    post.data.tags?.forEach((tag) => {
+      if (!tagMap.has(tag)) {
+        tagMap.set(tag, []);
+      }
+      tagMap.get(tag)!.push(post);
+    });
+  });
+
+  return Array.from(tagMap.entries()).map(([tag, posts]) => ({
+    params: { tag },
+    props: { posts, tag },
   }));
 }
+
+const { posts, tag } = Astro.props;
 ---
+<BaseLayout>
+  <div>#{tag}</div>
+  <PostList posts={posts}/>
+</BaseLayout>

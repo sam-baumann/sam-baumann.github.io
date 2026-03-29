@@ -1,6 +1,7 @@
 ---
 import { getCollection } from "astro:content";
 import BaseLayout from "../layouts/BaseLayout.astro";
+import PostList from "../components/PostList.astro";
 
 //get latest 10 blog posts
 const posts = (await getCollection("blog"))
@@ -55,24 +56,7 @@ const posts = (await getCollection("blog"))
         </div>
         <div class="space-y-1">
             <p class="font-bold">Writing</p>
-            <ul class="">
-                {
-                    // TODO abstract this into a component and use it on the blog page too
-                }
-                {
-                    posts.map((post) => {
-                        return (
-                            <li>
-                                <a href={`/blog/${post.id}`}>
-                                    <div class="font-semibold hover:bg-mist-400 dark:hover:bg-mist-700 rounded-sm -mx-3 px-3">
-                                        {post.data.title}
-                                    </div>
-                                </a>
-                            </li>
-                        );
-                    })
-                }
-            </ul>
+            <PostList posts={posts}></PostList>
             <a href="/blog">See All</a>
         </div>
     </div>

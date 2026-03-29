@@ -1,0 +1,27 @@
+---
+import type { CollectionEntry } from "astro:content";
+
+type Post = CollectionEntry<"blog">;
+
+interface Props {
+    posts: Post[];
+}
+
+const { posts } = Astro.props;
+---
+
+<ul class="">
+    {
+        posts.map((post) => {
+            return (
+                <li>
+                    <a href={`/blog/${post.id}`}>
+                        <div class="font-semibold hover:bg-mist-400 dark:hover:bg-mist-700 rounded-sm -mx-3 px-3">
+                            {post.data.title}
+                        </div>
+                    </a>
+                </li>
+            );
+        })
+    }
+</ul>
