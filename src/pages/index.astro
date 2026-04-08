@@ -14,49 +14,46 @@ const posts = (await getCollection("blog"))
 ---
 
 <BaseLayout>
-    <div class="text-lg md:text-xl space-y-6">
+    <div class="prose lg:prose-xl prose-mist dark:prose-invert space-y-6">
         <div>
-            <p class="font-semibold">About</p>
-            <div class="space-y-3">
-                <p>
-                    Hi! I'm Sam, a software engineer from Knoxville, Tennessee.
-                </p>
+            <h3 class="font-semibold">About</h3>
+            <p>Hi! I'm Sam, a software engineer from Knoxville, Tennessee.</p>
 
-                <p>
-                    On the innovations team at <a
-                        class="underline"
-                        href="https://americanaccessoriesintl.com/"
-                    >
-                        AAI
-                    </a>, building things across computer vision, edge AI, and
-                    wherever the next interesting problem shows up.
-                </p>
+            <p>
+                On the innovations team at <a
+                    class="underline"
+                    href="https://americanaccessoriesintl.com/"
+                >
+                    AAI
+                </a>, building things across computer vision, edge AI, and
+                wherever the next interesting problem shows up.
+            </p>
 
-                <p>
-                    In my free time, I'm usually tinkering with something,
-                    following St. Louis and Tennessee sports, or playing chess
-                    (feel free to <a
-                        class="underline"
-                        href="https://lichess.org/@/sam-k-b"
-                    >
-                        challenge me
-                    </a> on Lichess - fair warning, I'm not very good!)
-                </p>
+            <p>
+                In my free time, I'm usually tinkering with something, following
+                St. Louis and Tennessee sports, or playing chess (feel free to <a
+                    class="underline"
+                    href="https://lichess.org/@/sam-k-b"
+                >
+                    challenge me
+                </a> on Lichess - fair warning, I'm not very good!)
+            </p>
 
-                <p>
-                    If you'd like to get in touch, I'd love to hear from you
-                    over email: <a
-                        href="mailto:sam.k.baumann@gmail.com"
-                        class="underline"
-                    >
-                        sam.k.baumann@gmail.com
-                    </a>
-                </p>
-            </div>
+            <p>
+                If you'd like to get in touch, I'd love to hear from you over
+                email: <a
+                    href="mailto:sam.k.baumann@gmail.com"
+                    class="underline"
+                >
+                    sam.k.baumann@gmail.com
+                </a>
+            </p>
         </div>
         <div class="space-y-1">
-            <p class="font-bold">Writing</p>
-            <PostList posts={posts}></PostList>
+            <h3 class="font-bold">Writing</h3>
+            <div class="not-prose">
+                <PostList posts={posts} />
+            </div>
             <a href="/blog">See All</a>
         </div>
     </div>

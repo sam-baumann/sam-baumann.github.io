@@ -1,7 +1,7 @@
 ---
 title: "Fixing a Bug in the Lichess Mobile App"
 date: "Mar 29 2026"
-description: "How I traced and fixed a regression in Lichess's puzzle streak feature — and learned Flutter along the way."
+description: "How I traced and fixed a regression in Lichess's puzzle streak feature."
 tags: ["programming", "open-source", "chess"]
 ---
 ### Intro
@@ -64,6 +64,3 @@ I enjoyed learning dart/flutter paradigms, and how they work in a large codebase
 One other lesson here: writing a test is not just good practice, but can be a good tool to learn a new codebase
 
 The PR can be found here: [\#2452](https://github.com/lichess-org/mobile/pull/2452) for the more technical details
-#### AI Disclosure
-
-AI was used in this project to help understand the codebase, but all actual code and contribution was my own, along with all words on this page.
