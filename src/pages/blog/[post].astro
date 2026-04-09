@@ -18,7 +18,7 @@ const { Content } = await render(post);
   <div class="min-h-full pt-5">
     <h1 class="text-5xl font-bold">{post.data.title}</h1>
 
-    <div class="text-sm text-mist-500 dark:text-mist-400 mb-4">Published on {post.data.date || "Date unavailable"}</div>
+    <div class="text-sm text-mist-500 mb-4">Published on {post.data.date || "Date unavailable"}</div>
 
     {
       post.data.tags && post.data.tags.length > 0 ? (
@@ -42,13 +42,13 @@ const { Content } = await render(post);
 
     <div class="border border-mist-600 p-2.5 rounded-2xl mt-5.5">
       <p class="text-base">
-        Want to talk about this? Email me at: <a
-                    href="mailto:sam.k.baumann@gmail.com"
-                    class="underline"
-                >
-                    sam.k.baumann@gmail.com
-                </a>. All words published are written by myself.
-                </p>
+        Want to talk about this? Email me at: 
+          <a
+          href="mailto:sam.k.baumann@gmail.com"
+          class="underline">
+            sam.k.baumann@gmail.com
+          </a>. All words published are written by myself.
+        </p>
     </div>
   </div>
 </BaseLayout>
